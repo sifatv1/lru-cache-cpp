@@ -1,0 +1,32 @@
+
+Focus: optimization , performance 
+
+LRU CACHE 
+Implement a Least Recently Used (LRU) Cache supporting:
+Cache(capacity)
+get(key)
+put(key, value)
+Requirements:
+Positive capacity
+get(key) returns the stored value if the key exists; otherwise -1
+- A successful get() makes that key the most recently used
+put() inserts or updates a key/value pair
+When capacity is exceeded, remove the least recently used entry
+get() and put() should run in O(1) average time
+Example:
+cache = Cache(2)
+cache.put("A", 10)
+cache.put("B", 20)
+cache.get("A") -> 10
+cache.put("C", 30)
+cache.get("B")
+-> -1
+cache.get("C")
+-> 30
+cache.get("A") -> 10
+
+Techstack: C++
+
+
+Submission (both fields below are required):
+deliver :  GitHub Repository - should contain source code, test/example code, a README, and run instructions. The README should explain: data structures used and why, how LRU ordering is maintained, time complexity, space complexity, and how to run it.
